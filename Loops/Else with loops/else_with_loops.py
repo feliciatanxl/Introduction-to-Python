@@ -3,11 +3,13 @@ while i < 5:
     print('it\'s less than 5')
     i += 1
 else:
-    print('and now it\'s 5')  # Print this message when the condition is no longer True
+    print('and now it\'s 5')
 
 for i in range(1, 5):
-    # Add a condition for interruption.
-        # Add a statement that will terminate the loop.
+    # Add these two lines to break the loop at 3
+    if i == 3:
+        break
+
     print(i)
 else:
     print("for loop is done")
